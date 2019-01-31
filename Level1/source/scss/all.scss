@@ -1,0 +1,33 @@
+@import "functions";
+@import "variables";
+@import "bootstrap";
+
+body{
+    background-color: #F0F0F0;
+}
+.image1{
+    float: left;
+}
+.number-title{
+    font-size: 132px;
+}
+.banner{
+    height: 338px;
+}
+.line{
+    background-color: $hex;
+    height: 1px;
+    width: 280px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.multBox{
+    background-color: $white;
+    border-top-left-radius: 100px;
+    border-bottom-right-radius: 30px;
+    box-shadow: 2px 2px 5px 2px $secondary;
+}
+.footer{
+    background-color: #2eb738;
+    color: #f0f0f0;
+}
