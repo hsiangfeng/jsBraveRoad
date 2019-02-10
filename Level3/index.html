@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>計算機</title>
+    <link rel="stylesheet" href="./css/all.css">
+  </head>
+
+  <body>
+
+    <div id="app">
+      <div class="computer">
+        <div class="header">
+          <div class="resultSmall">{{resultSmall}}</div>
+          <div class="result">{{result}}</div>
+        </div>
+        <div class="body">
+          <div class="body-top">
+            <button class="computer-btn" @click="addNumber(7)">7</button>
+            <button class="computer-btn" @click="addNumber(8)">8</button>
+            <button class="computer-btn" @click="addNumber(9)">9</button>
+            <button class="computer-btn operator" @click="operation('÷')">÷</button>
+          </div>
+          <div class="body-center">
+            <button class="computer-btn" @click="addNumber(4)">4</button>
+            <button class="computer-btn" @click="addNumber(5)">5</button>
+            <button class="computer-btn" @click="addNumber(6)">6</button>
+            <button class="computer-btn operator" @click="operation('×')">×</button>
+          </div>
+          <div class="body-center">
+            <button class="computer-btn" @click="addNumber(1)">1</button>
+            <button class="computer-btn" @click="addNumber(2)">2</button>
+            <button class="computer-btn" @click="addNumber(3)">3</button>
+            <button class="computer-btn operator" @click="operation('+')">+</button>
+          </div>
+          <div class="body-bottom">
+            <button class="computer-btn" @click="addNumber(0)">0</button>
+            <button class="computer-btn" @click="addNumber('00')">00</button>
+            <button class="computer-btn" @click="addNumber('.')">.</button>
+            <button class="computer-btn operator" @click="operation('-')">-</button>
+          </div>
+          <div class="body-footer">
+            <button class="computer-btn menus" @click="removeNumber">AC</button>
+            <button class="computer-btn menus" @click="reduceNumber">⌫</button>
+            <button class="computer-btn equal" @click="resultFu">=</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/vue.js"></script>
+    <script src="./js/all.js"></script>
+  </body>
+
+</html>
