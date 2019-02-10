@@ -23,8 +23,12 @@ const app = new Vue({
     resultFu: function () {
       let vm = this
       let str = vm.resultSmall.replace(/×/g, '*').replace(/÷/g, '/').replace(/-/g, '-')
+      const strLen = str.length
       console.log(str)
       this.result = eval(str)
+      if (strLen > 10) {
+        document.querySelector('.result').style.overflowX = 'scroll'
+      }
     },
     removeNumber: function () {
       this.result = ''
